@@ -1,3 +1,7 @@
+:root {
+  --green: #00bc42
+}
+
 html[theme='dark-mode'] {
   filter: invert(1) hue-rotate(180deg);
 }
@@ -11,12 +15,13 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: #5badf0;
+  text-decoration: underline;
+  color: var(--green);
 }
 
 a:hover {
-  color: #0366d6;
+  color: var(--green);
+  filter: brightness(85%);
 }
 
 /* markdown content styles */
@@ -144,17 +149,18 @@ nav.navigation a {
   top: 8px;
   right: 6px;
   padding: 8px 12px;
-  color: #5badf0;
+  color: var(--green);
   font-size: 13px;
   line-height: 1.35;
   border-radius: 3px;
 }
 nav.navigation a:hover {
-  color: #0366d6;
+  color: var(--green);
+  text-decoration: underline;
 }
 
 nav.navigation a.button {
-  background: #5badf0;
+  background: #000;
   color: #fff;
   margin-left: 12px;
 }
@@ -171,7 +177,7 @@ nav.navigation a.button {
     top: 8px;
     right: 6px;
     padding: 8px 8px;
-    color: #5badf0;
+    color: var(--green);
     font-size: 13px;
     line-height: 1.35;
     border-radius: 3px;
@@ -250,8 +256,9 @@ nav.navigation a.button {
 /* profile  */
 
 .profile {
-  margin: 60px auto 0 auto;
-  text-align: center;
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .profile .avatar {
@@ -264,8 +271,8 @@ nav.navigation a.button {
 .profile h1 {
   font-weight: 400;
   letter-spacing: 0px;
-  font-size: 20px;
-  color: #404040;
+  font-size: 40px;
+  color: #000;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -273,7 +280,7 @@ nav.navigation a.button {
 .profile h2 {
   font-size: 20px;
   font-weight: 300;
-  color: #757575;
+  color: #000;
   margin-top: 0;
 }
 
@@ -290,20 +297,21 @@ nav.navigation a.button {
 
 #list-page .title {
   display: inline-block;
-  color: #404040;
-  font-size: 20px;
+  color: #000;
+  font-size: 24px;
   font-weight: 400;
   margin: 0;
   width: 80%;
 }
 
 #list-page .title a {
-  color: #404040;
+  color: var(--green);
   display: block;
 }
 
 #list-page .title a:hover {
-  color: #0366d6;
+  filter: brightness(85%);
+  text-decoration: underline;
 }
 
 #list-page .date {
@@ -312,11 +320,11 @@ nav.navigation a.button {
   text-align: right;
   position: relative;
   top: 1px;
-  color: #bbb;
+  color: #000;
 }
 
 #list-page .summary {
-  color: #757575;
+  color: #000;
   margin-top: 12px;
   word-break: normal;
   overflow-wrap: anywhere;
