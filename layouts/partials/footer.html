@@ -7,8 +7,9 @@
     {{ with .Site.Params.copyright }}
         {{ . | markdownify }}
     {{ else }}
-       © Copyright 
+       © 
        {{ now.Format "2006"}} 
+       The Authors
        <span class="split">
         {{ partial "svgs/heart.svg" (dict "fill" "#bbbbbb" "width" 15 "height" 15 ) }}
        </span>
