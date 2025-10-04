@@ -264,7 +264,7 @@ nav.navigation a.button {
 
 .profile .avatar {
   display: inline-block;
-  width: 150px;
+  width: 200px;
 }
 
 .profile h1 {
@@ -284,6 +284,11 @@ nav.navigation a.button {
     margin-bottom: 30px;
     margin-top: 10px;
   }
+
+  .profile .avatar {
+  display: inline-block;
+  width: 150px;
+}
 }
 
 .profile h2 {
